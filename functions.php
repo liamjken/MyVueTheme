@@ -6,7 +6,7 @@
  */
 
 function enqueue_vue_scripts() {
-    wp_enqueue_script( 'vue-app', get_stylesheet_directory_uri() . '/assets/index-fa50d387.js', array(), '1.1', true );
+    wp_enqueue_script( 'vue-app', get_stylesheet_directory_uri() . '/assets/index-97a17125.js', array(), '1.1', true );
     wp_enqueue_style( 'vue-app', get_stylesheet_directory_uri() . '/assets/index-683d4dfe.css', array(), '1.1' );
 }
 
