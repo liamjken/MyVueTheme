@@ -5,8 +5,6 @@
  * @package MyVueTheme
  */
 
- if ( ! function_exists( 'myvuetheme_support' ) ) :
-
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
