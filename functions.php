@@ -5,13 +5,6 @@
  * @package MyVueTheme
  */
 
-	/**
-	 * Sets up theme defaults and registers support for various WordPress features.
-	 *
-	 * @since Twenty Twenty-Two 1.0
-	 *
-	 * @return void
-	 */
 add_theme_support( 'wp-block-styles' );
 add_theme_support( 'align-wide' );
 add_theme_support( 'editor-styles' );
