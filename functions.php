@@ -5,24 +5,28 @@
  * @package MyVueTheme
  */
 
- function myVueThemeSupports_support() {
+ if ( ! function_exists( 'myvuetheme_support' ) ) :
 
-    // Add support for block styles.
-    add_theme_support( 'wp-block-styles' );
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
+	 *
+	 * @since Twenty Twenty-Two 1.0
+	 *
+	 * @return void
+	 */
+	function myvuetheme_support() {
 
-    // Enqueue editor styles.
-    add_editor_style( 'style.css' );
+		// Add support for block styles.
+		add_theme_support( 'wp-block-styles' );
 
-}
+		// Enqueue editor styles.
+		add_editor_style( 'style.css' );
 
+	}
 
-add_action( 'init', 'myVueThemeSupports_support' );
+endif;
 
-function enqueue_default_block_styles() {
-    wp_enqueue_style('wp-block-library'); // Enqueue default block styles.
-}
-
-add_action('enqueue_block_editor_assets', 'enqueue_default_block_styles');
+add_action( 'after_setup_theme', 'myvuetheme_support' );
 
 
 function enqueue_vue_scripts() {
