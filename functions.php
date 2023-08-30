@@ -16,7 +16,7 @@
 }
 
 
-add_action( 'after_setup_theme', 'myVueThemeSupports_support' );
+add_action( 'init', 'myVueThemeSupports_support' );
 
 
 function enqueue_vue_scripts() {
