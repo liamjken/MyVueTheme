@@ -5,7 +5,6 @@
  * @package MyVueTheme
  */
 
- add_theme_support( 'wp-block-styles' ); 
 
 
 function enqueue_vue_scripts() {
