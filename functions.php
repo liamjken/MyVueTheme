@@ -18,6 +18,7 @@
 
 		// Add support for block styles.
 		add_theme_support( 'wp-block-styles' );
+        add_theme_support( 'custom-spacing' );
 
 		// Enqueue editor styles.
 		add_editor_style( 'style.css' );
