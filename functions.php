@@ -16,5 +16,3 @@ function enqueue_vue_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'enqueue_vue_scripts' );
-
-add_action( 'wp_enqueue_scripts', array( 'WP_Duotone', 'output_block_styles' ), 9 );
