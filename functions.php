@@ -15,6 +15,8 @@
 	 * @return void
 	 */
 add_theme_support( 'wp-block-styles' );
+add_theme_support( 'align-wide' );
+add_theme_support( 'editor-styles' );
 
 
 function enqueue_vue_scripts() {
