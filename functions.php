@@ -18,6 +18,12 @@
 
 add_action( 'init', 'myVueThemeSupports_support' );
 
+function enqueue_default_block_styles() {
+    wp_enqueue_style('wp-block-library'); // Enqueue default block styles.
+}
+
+add_action('enqueue_block_editor_assets', 'enqueue_default_block_styles');
+
 
 function enqueue_vue_scripts() {
     wp_enqueue_script( 'vue-app', get_stylesheet_directory_uri() . '/assets/index-8f2e947b.js', array(), '1.8', true );
