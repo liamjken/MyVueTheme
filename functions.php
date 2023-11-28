@@ -16,3 +16,20 @@ function enqueue_vue_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'enqueue_vue_scripts' );
+
+add_theme_support('menus');
+
+function myvuetheme_setup() {
+    // Add theme support for menus
+    add_theme_support('menus');
+
+    // Register your menus
+    register_nav_menus(
+        array(
+            'primary-menu' => __('Primary Menu', 'myvuetheme'),
+            // Add more menus if needed
+        )
+    );
+}
+
+add_action('after_setup_theme', 'myvuetheme_setup');
