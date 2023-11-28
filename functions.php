@@ -33,14 +33,3 @@ function myvuetheme_setup() {
 }
 
 add_action('after_setup_theme', 'myvuetheme_setup');
-
-function myvuetheme_register_menus() {
-    register_nav_menus(
-        array(
-            'primary-menu' => __('Primary Menu', 'myvuetheme'),
-            // Add more menus if needed
-        )
-    );
-}
-
-add_action('after_setup_theme', 'myvuetheme_register_menus');
