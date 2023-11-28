@@ -33,3 +33,18 @@ function myvuetheme_setup() {
 }
 
 add_action('after_setup_theme', 'myvuetheme_setup');
+
+// Create custom REST API endpoint for menus
+function custom_menu_rest_endpoint(WP_REST_Request $request) {
+    $menu_location = $request->get_param('menu_location');
+    $menu = wp_get_nav_menu_items($menu_location);
+
+    return new WP_REST_Response($menu, 200);
+}
+
+add_action('rest_api_init', function () {
+    register_rest_route('custom/v1', '/menu/', array(
+        'methods' => 'GET',
+        'callback' => 'custom_menu_rest_endpoint',
+    ));
+});
