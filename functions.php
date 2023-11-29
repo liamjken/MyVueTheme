@@ -8,6 +8,7 @@
 add_theme_support( 'wp-block-styles' );
 add_theme_support( 'align-wide' );
 add_theme_support( 'editor-styles' );
+add_theme_support( 'post-thumbnails' );
 
 
 function enqueue_vue_scripts() {
