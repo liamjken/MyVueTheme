@@ -52,7 +52,7 @@ function custom_menu_rest_endpoint(WP_REST_Request $request) {
 }
 
 add_action('rest_api_init', function () {
-    register_rest_route('custom/v1', '/menu/', array(
+    register_rest_route('vt/v1', '/menu/', array(
         'methods' => 'GET',
         'callback' => 'custom_menu_rest_endpoint',
     ));
