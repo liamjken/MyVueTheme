@@ -12,7 +12,7 @@ add_theme_support( 'post-thumbnails' );
 
 
 function enqueue_vue_scripts() {
-    wp_enqueue_script( 'vue-app', get_stylesheet_directory_uri() . '/assets/index-568d381c.js', array(), '2', true );
+    wp_enqueue_script( 'vue-app', get_stylesheet_directory_uri() . '/assets/index-94a55fb0.js', array(), '2', true );
     wp_enqueue_style( 'vue-app', get_stylesheet_directory_uri() . '/assets/index-1b23982a.css', array(), '2' );
 }
 
