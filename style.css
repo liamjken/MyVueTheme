@@ -10,3 +10,7 @@ Tested up to: 6.0.2
 Requires PHP: 8.0
 text domain: myvuetheme
 */
+
+p {
+    padding: 5px;
+}
