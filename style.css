@@ -23,3 +23,12 @@ p {
 .wp-block-code {
    background-color:#d9d9d9; 
 }
+
+h1, h2, h3, h4{
+    color: #48742C;
+    }
+    
+    a {
+        color: #48742C;
+        text-decoration: underline;
+    }
